@@ -8,10 +8,11 @@
 const mysql = require("mysql");
 //DB연결
 const conn = mysql.createConnection({
-  host: "svc.sel4.cloudtype.app:31713",
+  host: "svc.sel4.cloudtype.app",
   user: "test",
   password: "1234",
   database: "kdt7",
+  port: 31713,
 });
 
 //방명록 전체 보이기
